@@ -127,6 +127,64 @@
         .menu-pop{
             height: 400px;
         }
+
+
+        /* Responsive design for mobile devices */
+@media screen and (max-width: 768px) {
+    .menu-slide, .menu-fade, .menu-pop, .menu-overlay, .menu-dropdown, .menu-modal, .menu-push, .menu-rotational, .menu-morph {
+        width: 100%; /* Full-width for mobile */
+        height: auto; /* Automatic height adjustment */
+        position: fixed; /* Fixed position for a mobile app-like feel */
+        top: 0;
+        left: 0;
+        border-radius: 0; /* Remove rounded corners */
+    }
+
+    /* Adjustments for vertical stacking */
+    .menu-slide {
+        height: 80vh;
+        animation: slideIn 0.5s ease-in-out;
+    }
+
+    .menu-fade {
+        height: 70vh;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .menu-pop {
+        height: 60vh;
+        transform: scale(1.05);
+    }
+
+    /* Optional: overlay effect for better app feel */
+    .menu-overlay {
+        background: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .menu-modal {
+        height: 90vh;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Rotational and morph-specific adjustments */
+    .menu-rotational {
+        height: 70vh;
+        animation: rotateIn 0.6s ease-in-out;
+    }
+
+    .menu-morph {
+        height: 80vh;
+        animation: morphIn 0.6s ease-in-out;
+    }
+
+    /* Add smooth scrolling for a better mobile experience */
+    body {
+        overflow-x: hidden;
+    }
+}
+        
     </style> 
 </head>
 
