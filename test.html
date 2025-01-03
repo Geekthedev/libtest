@@ -15,6 +15,9 @@
             background: linear-gradient(135deg, #f7f8f7, #e1f7ff);
             color: #333;
             padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .container {
@@ -134,7 +137,7 @@
 
 
     .container{
-        width: 80%;
+        width: 100%;
         margin: 10px auto;
     }
     .container .test-section {
@@ -186,7 +189,7 @@
     
     .menu-slide, .menu-fade, .menu-pop, .menu-overlay, .menu-dropdown, .menu-modal, .menu-push, .menu-rotational, .menu-morph {
         width: 100%; /* Full-width for mobile */
-        height: 50%; /* Automatic height adjustment */
+        height: auto; /* Automatic height adjustment */
         position: fixed; /* Fixed position for a mobile app-like feel */
         top: 0;
         left: 0;
@@ -195,12 +198,13 @@
 
     /* Adjustments for vertical stacking */
     .menu-slide {
+        width:50%;
         height: 80vh;
         animation: slideIn 0.5s ease-in-out;
     }
 
     .menu-fade {
-        height: 70vh;
+        height: 50vh;
         animation: fadeIn 0.5s ease-in-out;
     }
 
@@ -233,8 +237,7 @@
     }
 
     button {
-            display: flex;
-            justify-content: flex-end;
+            display: block;
             padding: 12px 30px;
             background-color: #007bff;
             color: #fff;
@@ -250,6 +253,7 @@
     /* Add smooth scrolling for a better mobile experience */
     body {
         overflow-x: hidden;
+        padding: 5px;
     }
 }
         
